@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    a<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keydown Sound Example</title>
+  </head>
+  <body>
+    <h1>Press 'A' or 'S' to play a sound</h1>
+
+    <!-- Audio elements for sound effects -->
+    <audio id="soundA" src="878272__l8ent_space__roland-sh-4d-mech-industrial-coin-slot-clack-01.wav"></audio>
+    <audio id="soundS" src="878273__l8ent_space__roland-sh-4d-scifiui-sh101-cursor-move-blip-03.wav"></audio>
+
+    <script>
+      function keyEvent(e) {
+        if (e.key === "a") {
+          document.getElementById("soundA").play();
+        } else if (event.key === "s") {
+          document.getElementById("soundS").play();
+        }
+      }
